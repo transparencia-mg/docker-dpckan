@@ -1,8 +1,6 @@
-FROM ubuntu:20.04
-COPY scripts.sh /
-RUN chmod +x /scripts.sh
-RUN /scripts.sh
+FROM python:3.9.12-slim-bullseye
+WORKDIR /dataset
+COPY scripts/ / 
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
-WORKDIR /dataset
 CMD ["echo", "Bem Vindo"]
