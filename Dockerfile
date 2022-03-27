@@ -1,8 +1,7 @@
 FROM ubuntu:20.04
-RUN apt update
-RUN apt install python3.9
-RUN apt install python3.9-pip
-RUN apt install libpq-dev
+COPY scripts.sh /
+RUN chmod +x /scripts.sh
+RUN /scripts.sh
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 WORKDIR /dataset
