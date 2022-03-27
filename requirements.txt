@@ -1,4 +1,5 @@
 ipdb==0.13.9
+psycopg2-binary==2.9.3
 dpckan==0.1.15
 frictionless[excel]==4.26.0
 dtamg-py==0.1.6
