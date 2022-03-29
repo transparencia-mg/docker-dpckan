@@ -1,3 +1,4 @@
 ipdb==0.13.9
 dpckan==0.1.15
 pandas==1.4.1
+openpyxl==3.0.9
