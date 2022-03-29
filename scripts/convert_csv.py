@@ -1,4 +1,5 @@
 import sys
+import pandas as pd
 
 def convert_csv(xlsx_file_path, csv_file_path):
   # referências: https://towardsdatascience.com/how-to-export-pandas-dataframe-to-csv-2038e43d9c03
