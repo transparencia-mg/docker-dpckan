@@ -5,4 +5,3 @@ WORKDIR /dataset
 COPY scripts/ /scripts
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
-CMD ["echo", "Bem Vindo"]
