@@ -1,5 +1,6 @@
 import os
 import sys
+from frictionless import Package
 
 def compare_data_resource_paths():
   data_resources_names = os.listdir('data')
@@ -7,7 +8,7 @@ def compare_data_resource_paths():
   local_package = Package('datapackage.json')
   datapackage_resouces_paths = [i["path"] for i in local_package.resources]
   if data_resources_paths != datapackage_resouces_paths:
-    click.echo(f"Resources presentes no arquivo datapackage.json diferente dos listados da pasta data.")
+    print("Resources presentes no arquivo datapackage.json diferente dos listados da pasta data.")
     sys.exit(1)
 
 if __name__ == '__main__':
