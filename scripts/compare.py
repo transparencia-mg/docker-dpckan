@@ -1,3 +1,6 @@
+import os
+import sys
+
 def compare_data_resource_paths():
   data_resources_names = os.listdir('data')
   data_resources_paths = [os.path.join('data', i) for i in data_resources_names]
