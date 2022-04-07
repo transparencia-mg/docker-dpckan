@@ -3,3 +3,4 @@ dpckan==0.1.15
 pandas==1.4.1
 openpyxl==3.0.9
 click==8.0.1
+livemark==0.87.0
